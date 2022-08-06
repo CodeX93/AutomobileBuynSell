@@ -14,6 +14,8 @@ class myApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+
       initialRoute: '/',
       routes: {
         // When navigating to the "/" route, build the FirstScreen widget.
