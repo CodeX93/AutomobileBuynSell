@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:hyser_wheels1/Widgets/ContactSupport.dart';
 
 class myDrawer extends StatelessWidget {
   const myDrawer({Key? key}) : super(key: key);
@@ -12,17 +10,17 @@ class myDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Color.fromRGBO(112, 71, 237, 1),
+      backgroundColor: const Color.fromRGBO(112, 71, 237, 1),
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[
           DrawerHeader(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color.fromRGBO(86, 36, 237, 10),
             ),
             child: Column(
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 40,
                   backgroundImage: AssetImage(
                       '/Users/aghashahhyder/Desktop/profilelogo.png'),
@@ -30,7 +28,7 @@ class myDrawer extends StatelessWidget {
                 Container(
                   height: 20,
                 ),
-                Text(
+                const Text(
                   'Profile Name ',
                   style: TextStyle(
                     fontSize: 22,
@@ -42,24 +40,24 @@ class myDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(
+            leading: const Icon(
               Icons.message,
               color: Colors.white,
             ),
-            title: Text(
+            title: const Text(
               'AutoParts',
               style: TextStyle(color: Colors.white, fontSize: 16),
             ),
             onTap: () {
-              print('Buy Auto Parts');
+              Navigator.pushNamed(context, '/AllAutoPartPage');
             },
           ),
           ListTile(
-            leading: Icon(
+            leading: const Icon(
               Icons.article,
               color: Colors.white,
             ),
-            title: Text(
+            title: const Text(
               'Blogs',
               style: TextStyle(color: Colors.white, fontSize: 16),
             ),
@@ -68,24 +66,24 @@ class myDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(
+            leading: const Icon(
               Icons.safety_check,
               color: Colors.white,
             ),
-            title: Text(
+            title: const Text(
               'Insurance Plan',
               style: TextStyle(color: Colors.white, fontSize: 16),
             ),
             onTap: () {
-              print('Insurance Plan');
+              Navigator.pushNamed(context, '/CarInsurancePage');
             },
           ),
           ListTile(
-            leading: Icon(
+            leading: const Icon(
               Icons.compare_arrows,
               color: Colors.white,
             ),
-            title: Text(
+            title: const Text(
               'Vehicle Comparision',
               style: TextStyle(color: Colors.white, fontSize: 16),
             ),
@@ -94,24 +92,24 @@ class myDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(
+            leading: const Icon(
               Icons.car_repair,
               color: Colors.white,
             ),
-            title: Text(
+            title: const Text(
               'Car Inspection',
               style: TextStyle(color: Colors.white, fontSize: 16),
             ),
             onTap: () {
-              print('Car Inspection');
+              Navigator.pushNamed(context, '/CarInspectionPage');
             },
           ),
           ListTile(
-            leading: Icon(
+            leading: const Icon(
               Icons.help_outlined,
               color: Colors.white,
             ),
-            title: Text(
+            title: const Text(
               'Customer Support',
               style: TextStyle(color: Colors.white, fontSize: 16),
             ),
@@ -120,17 +118,17 @@ class myDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(
+            leading: const Icon(
               Icons.logout,
-              color: Color.fromRGBO(240, 7, 40,100),
+              color: Color.fromRGBO(240, 7, 40, 100),
             ),
-            title: Text(
+            title: const Text(
               'Log Out',
               style: TextStyle(
                   color: Colors.red, fontSize: 16, fontWeight: FontWeight.bold),
             ),
             onTap: () {
-              print('Log Out');
+              Navigator.pushNamed(context, '/LoginPage');
             },
           ),
         ],

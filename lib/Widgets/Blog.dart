@@ -7,20 +7,22 @@ class BlogView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton.extended(
-        label: Text('Post a Blog'),
-          backgroundColor: Color.fromRGBO(86, 36, 237, 10),
-          icon: Icon(
+          label: const Text('Post a Blog'),
+          backgroundColor: const Color.fromRGBO(86, 36, 237, 10),
+          icon: const Icon(
             Icons.add,
             color: Colors.white,
           ),
-          onPressed: (() {Navigator.pushNamed(context, '/uploadBlog');})),
+          onPressed: (() {
+            Navigator.pushNamed(context, '/uploadBlog');
+          })),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Blogs',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
-        backgroundColor: Color.fromRGBO(86, 36, 237, 10),
+        backgroundColor: const Color.fromRGBO(86, 36, 237, 10),
         actions: [
           TextButton(
             onPressed: (() {}),
@@ -32,11 +34,11 @@ class BlogView extends StatelessWidget {
                   }),
                   child: Row(
                     children: [
-                      Text(
+                      const Text(
                         'My Blogs  ',
                         style: TextStyle(color: Colors.white, fontSize: 10),
                       ),
-                      Icon(
+                      const Icon(
                         Icons.article,
                         color: Colors.white,
                       ),
@@ -48,9 +50,8 @@ class BlogView extends StatelessWidget {
           )
         ],
       ),
-
       body: Container(
-        color: Color.fromRGBO(86, 36, 237, 10),
+        color: const Color.fromRGBO(86, 36, 237, 10),
         child: Column(),
       ),
     );

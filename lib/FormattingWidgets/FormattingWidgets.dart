@@ -10,3 +10,17 @@ class GiveSpaceVertical extends StatelessWidget {
     );
   }
 }
+class GiveSpaceHorizontal extends StatelessWidget{
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+
+        width: 15
+    );
+  }
+
+
+
+}

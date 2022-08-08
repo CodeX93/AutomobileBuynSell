@@ -10,9 +10,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         floatingActionButton: FloatingActionButton.extended(
-            label: Text('Post Add'),
-            backgroundColor: Color.fromRGBO(86, 36, 237, 10),
-            icon: Icon(
+            label: const Text('Post Add'),
+            backgroundColor: const Color.fromRGBO(86, 36, 237, 10),
+            icon: const Icon(
               Icons.add,
               color: Colors.white,
             ),
@@ -20,12 +20,12 @@ class HomePage extends StatelessWidget {
               Navigator.pushNamed(context, '/uploadAdd');
             })),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-        backgroundColor: Color.fromRGBO(240, 240, 245, 25),
+        backgroundColor: const Color.fromRGBO(240, 240, 245, 25),
         appBar: AppBar(
-          backgroundColor: Color.fromRGBO(86, 36, 237, 10),
-          title: Text('Home'),
+          backgroundColor: const Color.fromRGBO(86, 36, 237, 10),
+          title: const Text('Home'),
         ),
-        drawer: Drawer(
+        drawer: const Drawer(
           child: myDrawer(),
         ),
         body: SingleChildScrollView(
@@ -37,13 +37,13 @@ class HomePage extends StatelessWidget {
                   '/Users/aghashahhyder/Desktop/logo.png',
                 ),
               ),
-              TextField(
+              const TextField(
                 decoration: InputDecoration(
                   hintText: 'Search Vehicle',
                   prefixIcon: Icon(Icons.search_sharp),
                 ),
               ),
-              SingleChildScrollView(
+              const SingleChildScrollView(
                 padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                 child: AddList(),
               ),

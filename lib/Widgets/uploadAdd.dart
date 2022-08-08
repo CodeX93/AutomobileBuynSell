@@ -10,28 +10,28 @@ class UploadAdd extends StatelessWidget {
     String make;
     return Scaffold(
       floatingActionButton: FloatingActionButton.extended(
-          label: Text('Upload Add'),
-          backgroundColor: Color.fromRGBO(86, 36, 237, 10),
-          icon: Icon(
+          label: const Text('Upload Add'),
+          backgroundColor: const Color.fromRGBO(86, 36, 237, 10),
+          icon: const Icon(
             Icons.save_alt_outlined,
             color: Colors.white,
           ),
           onPressed: (() {
-          Navigator.pop(context);
+            Navigator.pop(context);
           })),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       appBar: AppBar(
-        title: Text('Sell your Vehicle'),
-        backgroundColor: Color.fromRGBO(86, 36, 237, 10),
+        title: const Text('Sell your Vehicle'),
+        backgroundColor: const Color.fromRGBO(86, 36, 237, 10),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            GiveSpaceVertical(),
+            const GiveSpaceVertical(),
             Center(
               child: DropdownButtonFormField<String>(
                 isExpanded: true,
-                hint: Text('City'),
+                hint: const Text('City'),
                 alignment: Alignment.center,
                 items: <String>[
                   'Rawalpindi',
@@ -55,11 +55,11 @@ class UploadAdd extends StatelessWidget {
                 },
               ),
             ),
-            GiveSpaceVertical(),
+            const GiveSpaceVertical(),
             Center(
               child: DropdownButtonFormField<String>(
                 isExpanded: true,
-                hint: Text('Model Year'),
+                hint: const Text('Model Year'),
                 alignment: Alignment.center,
                 items: <int>[
                   2022,
@@ -86,11 +86,11 @@ class UploadAdd extends StatelessWidget {
                 },
               ),
             ),
-            GiveSpaceVertical(),
+            const GiveSpaceVertical(),
             Center(
               child: DropdownButtonFormField<String>(
                 isExpanded: true,
-                hint: Text('Make'),
+                hint: const Text('Make'),
                 alignment: Alignment.center,
                 items: <String>[
                   'BMW',
@@ -116,11 +116,11 @@ class UploadAdd extends StatelessWidget {
                 },
               ),
             ),
-            GiveSpaceVertical(),
+            const GiveSpaceVertical(),
             Center(
               child: DropdownButtonFormField<String>(
                 isExpanded: true,
-                hint: Text('Variant'),
+                hint: const Text('Variant'),
                 alignment: Alignment.center,
                 items: <String>[
                   '7 Series',
@@ -146,8 +146,8 @@ class UploadAdd extends StatelessWidget {
                 },
               ),
             ),
-            GiveSpaceVertical(),
-            Center(
+            const GiveSpaceVertical(),
+            const Center(
               child: TextField(
                 decoration: InputDecoration(
                     hintText: ' Price (Rs)',
@@ -156,8 +156,8 @@ class UploadAdd extends StatelessWidget {
                 keyboardType: TextInputType.number,
               ),
             ),
-            GiveSpaceVertical(),
-            Center(
+            const GiveSpaceVertical(),
+            const Center(
               child: TextField(
                 decoration: InputDecoration(
                     hintText: ' Mileage',
@@ -166,11 +166,11 @@ class UploadAdd extends StatelessWidget {
                 keyboardType: TextInputType.number,
               ),
             ),
-            GiveSpaceVertical(),
+            const GiveSpaceVertical(),
             Center(
               child: DropdownButtonFormField<String>(
                 isExpanded: true,
-                hint: Text('Registered City'),
+                hint: const Text('Registered City'),
                 alignment: Alignment.center,
                 items: <String>[
                   'Rawalpindi',
@@ -194,11 +194,11 @@ class UploadAdd extends StatelessWidget {
                 },
               ),
             ),
-            GiveSpaceVertical(),
+            const GiveSpaceVertical(),
             Center(
               child: DropdownButtonFormField<String>(
                 isExpanded: true,
-                hint: Text('Assembly'),
+                hint: const Text('Assembly'),
                 alignment: Alignment.center,
                 items: <String>[
                   'Imported',
@@ -214,11 +214,11 @@ class UploadAdd extends StatelessWidget {
                 },
               ),
             ),
-            GiveSpaceVertical(),
+            const GiveSpaceVertical(),
             Center(
               child: DropdownButtonFormField<String>(
                 isExpanded: true,
-                hint: Text('City'),
+                hint: const Text('City'),
                 alignment: Alignment.center,
                 items: <String>[
                   'White',
@@ -238,20 +238,21 @@ class UploadAdd extends StatelessWidget {
                 },
               ),
             ),
-            GiveSpaceVertical(),
-            Center(
+            const GiveSpaceVertical(),
+            const Center(
               child: TextField(
-
-               minLines: 1,
+                minLines: 1,
                 maxLines: 100,
                 decoration: InputDecoration(
-
                   hintText: 'Description',
-                  prefixIcon: Icon(Icons.description,color: Color.fromRGBO(86, 36, 237, 10),),
+                  prefixIcon: Icon(
+                    Icons.description,
+                    color: Color.fromRGBO(86, 36, 237, 10),
+                  ),
                 ),
               ),
             ),
-            GiveSpaceVertical(),
+            const GiveSpaceVertical(),
           ],
         ),
       ),

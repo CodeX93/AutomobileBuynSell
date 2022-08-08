@@ -9,9 +9,9 @@ class ContactSupport extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton.extended(
-        label: Text('Send Mail'),
-          backgroundColor: Color.fromRGBO(86, 36, 237, 10),
-          icon: Icon(
+          label: const Text('Send Mail'),
+          backgroundColor: const Color.fromRGBO(86, 36, 237, 10),
+          icon: const Icon(
             Icons.mail,
             color: Colors.white,
           ),
@@ -19,11 +19,11 @@ class ContactSupport extends StatelessWidget {
             print('Mail is sent to Provided address via API');
           })),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      backgroundColor: Color.fromRGBO(86, 36, 237, 10),
+      backgroundColor: const Color.fromRGBO(86, 36, 237, 10),
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(86, 36, 237, 10),
-        title: Text('Contact Support'),
-        actions: [
+        backgroundColor: const Color.fromRGBO(86, 36, 237, 10),
+        title: const Text('Contact Support'),
+        actions: const [
           Icon(
             (Icons.support_agent_outlined),
             size: 30,
@@ -35,7 +35,7 @@ class ContactSupport extends StatelessWidget {
         height: double.infinity,
         color: Colors.white,
         child: Column(
-          children: [
+          children: const [
             GiveSpaceVertical(),
             TextField(
               keyboardType: TextInputType.text,
